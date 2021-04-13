@@ -36,6 +36,15 @@ input {
     display: block;
     width: 340px;
     height: 30px;
+    padding-left: 10px;
+}
+
+footer {
+    color: white;
+    padding: 69px 370px 129px 370px;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(-3deg, var(--backgroundDarkColor) 70%, var(--backgroundLightColor) 30%);
 }
 
 .container {
@@ -110,10 +119,18 @@ input {
 .bodyFirstContent {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 80px;
 }
 
 .firstForm {
     margin-left: 70px !important;
+}
+
+.secondForm {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    margin-top: 60px;
 }
 
 .title {
@@ -132,6 +149,13 @@ input {
     margin-bottom: 20px;
 }
 
+.inputForm-share {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .inputForm-radio {
     display: grid;
     grid-template-columns: 30px 100px 30px 100px;
@@ -143,6 +167,13 @@ input {
     height: 20px;
 }
 
+.moreItens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 138px;
+}
+
 .submit {
     height: 40px;
     width: 340px;
@@ -150,110 +181,535 @@ input {
     border: solid 1px var(--backgroundDarkColor);
     color: var(--backgroundDarkColor);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.buySubmit {
+    height: 30px;
+    width: 175px;
+    background-color: transparent;
+    border: solid 1px var(--backgroundDarkColor);
+    color: var(--backgroundDarkColor);
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.submitMoreItens {
+    height: 40px;
+    width: 340px;
+    background-color: transparent;
+    border: solid 1px var(--backgroundDarkColor);
+    color: var(--backgroundDarkColor);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.submit-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.dividerTheme {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid var(--backgroundDarkColor);
+    line-height: 0.1em;
+    margin: 10px 0px 20px;
+}
+
+.dividerTheme span {
+    background: var(--backgroundLightColor);
+    padding: 0 10px;
+    margin-bottom: 60px;
+}
+
+.card__image-container {
+    width: 175px;
+    height: 440px;
+}
+
+.image-src {
+    width: 175px;
+    height: 180px;
+    border: 1px solid var(--backgroundDarkColor);
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+
+.card_content {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card_oldPrice {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card_Price {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card_parcelingPrice {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.share {
+    font-size: 14px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    margin-top: 200px;
+}
+
+.footer-text {
+    width: 260px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+@media (max-width: 325px) {
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 10px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 700;
+        line-height: 26.4px;
+    }
+    p {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    label {
+        display: block;
+    }
+    /* Aqui */
+    input {
+        display: block;
+        width: 284px;
+        height: 30px;
+        padding-left: 10px;
+    }
+    /* Aqui */
+    footer {
+        color: white;
+        padding: 0px 100px 30px 90px;
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(-9deg, var(--backgroundDarkColor) 70%, var(--backgroundLightColor) 30%);
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        background-color: var(--backgroundLightColor);
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    /* Aqui */
+    .navBar {
+        color: white;
+        padding: 69px 66px 85px 16px;
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+        background-image: linear-gradient(195deg, var(--backgroundDarkColor) 72%, var(--backgroundLightColor) 33%);
+    }
+    /* Aqui */
+    .navBarText-h2 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: left;
+        width: 100%;
+    }
+    /* Aqui */
+    .navBarText-h4 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 700;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    /* Aqui */
+    .navBarText-h6 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 400;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    /* Aqui */
+    .gridButtons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        width: 90vw;
+        margin-top: 40px;
+    }
+    .navBarButtons {
+        padding: 15px;
+    }
+    /* Aqui */
+    .buttonBody {
+        padding: 6px 6px;
+        border-radius: 5px;
+        color: var(--textGreyColor);
+        width: 130px;
+    }
+    /* Aqui */
+    .bodyMaster {
+        margin: 20px 20px 40px;
+        color: var(--textGreyColor);
+        font-weight: 400;
+    }
+    /* Aqui */
+    .bodyFirstContent {
+        display: block;
+        margin-bottom: 80px;
+    }
+    /* Aqui */
+    .firstForm {
+        margin-left: 0px !important;
+    }
+    /* Aqui */
+    .secondForm {
+        display: block;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    /* Aqui */
+    .title {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    /* Aqui */
+    .firstText {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    /* Aqui */
+    .SecondText {
+        font-size: 12px;
+    }
+    /* Aqui */
+    .label {
+        font-size: 12px;
+    }
+    .inputForm {
+        margin-bottom: 20px;
+    }
+    .inputForm-share {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inputForm-radio {
+        display: grid;
+        grid-template-columns: 30px 100px 30px 100px;
+        margin-bottom: 20px;
+    }
+    .inputRadio {
+        width: 20px;
+        height: 20px;
+    }
+    .moreItens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0px 138px;
+    }
+    /* Aqui */
+    .submit {
+        height: 40px;
+        width: 284px;
+        background-color: transparent;
+        border: solid 1px var(--backgroundDarkColor);
+        color: var(--backgroundDarkColor);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    /* Aqui */
+    .buySubmit {
+        height: 30px;
+        width: 140px;
+        background-color: transparent;
+        border: solid 1px var(--backgroundDarkColor);
+        color: var(--backgroundDarkColor);
+        border-radius: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    /* Aqui */
+    .submitMoreItens {
+        height: 40px;
+        width: 240px;
+        background-color: transparent;
+        border: solid 1px var(--backgroundDarkColor);
+        color: var(--backgroundDarkColor);
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .submit-share {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+    /* Aqui */
+    .dividerTheme {
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid var(--backgroundDarkColor);
+        line-height: 0.1em;
+        margin: 10px 0px 20px;
+        font-size: 16px;
+    }
+    .dividerTheme span {
+        background: var(--backgroundLightColor);
+        padding: 0 10px;
+        margin-bottom: 60px;
+    }
+    /* Aqui */
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 100%;
+    }
+    /* Aqui */
+    .card__image-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 300px;
+        height: 245px;
+    }
+    /* Aqui */
+    .image-src {
+        width: 140px;
+        height: 245px;
+        border: 1px solid var(--backgroundDarkColor);
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        margin-right: 0px;
+    }
+    /* Aqui */
+    .card_content {
+        margin-top: 0px;
+        font-size: 12px;
+    }
+    /* Aqui */
+    .card_info {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    /* Aqui */
+    .card_oldPrice {
+        margin-top: 3px;
+        font-size: 12px;
+    }
+    /* Aqui */
+    .card_Price {
+        margin-top: 3px;
+        font-size: 14px;
+    }
+    /* Aqui */
+    .card_parcelingPrice {
+        margin-top: 3px;
+        font-size: 12px;
+    }
+    .share {
+        font-size: 14px;
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Aqui */
+    .footer-content {
+        margin-top: 100px;
+    }
+    .footer-text {
+        width: 260px;
+        text-align: center;
+    }
+    .footer-lastText {
+        text-align: center;
+    }
 }
 
 @media (max-width: 870px) {
-    .container {
+    .chatbox {
+        width: 500px;
         min-height: 800px;
         height: 100vh;
+        background: var(--BlueLight);
+        padding: 25px;
+        box-shadow: 0 3px var(--GreyLight);
     }
-    .signin-signup {
+    .chatlogs {
+        padding: 10px;
         width: 100%;
-        top: 95%;
-        transform: translate(-50%, -100%);
-        transition: 1s 0.8s ease-in-out;
-    }
-    .signin-signup, .container.sign-up-mode .signin-signup {
-        left: 50%;
-    }
-    .panels-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 1fr;
-    }
-    .panel {
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding: 2.5rem 8%;
-        grid-column: 1 / 2;
-    }
-    .right-panel {
-        grid-row: 3 / 4;
-    }
-    .left-panel {
-        grid-row: 1 / 2;
-    }
-    .image {
-        width: 200px;
-        transition: transform 0.9s ease-in-out;
-        transition-delay: 0.6s;
-    }
-    .panel .content {
-        padding-right: 15%;
-        transition: transform 0.9s ease-in-out;
-        transition-delay: 0.8s;
-    }
-    .panel h3 {
-        font-size: 1.2rem;
-    }
-    .panel p {
-        font-size: 0.7rem;
-        padding: 0.5rem 0;
-    }
-    .btn.transparent {
-        width: 110px;
-        height: 35px;
-        font-size: 0.7rem;
-    }
-    .container:before {
-        width: 1500px;
-        height: 1500px;
-        transform: translateX(-50%);
-        left: 30%;
-        bottom: 68%;
-        right: initial;
-        top: initial;
-        transition: 2s ease-in-out;
-    }
-    .container.sign-up-mode:before {
-        transform: translate(-50%, 100%);
-        bottom: 32%;
-        right: initial;
-    }
-    .container.sign-up-mode .left-panel .image, .container.sign-up-mode .left-panel .content {
-        transform: translateY(-300px);
-    }
-    .container.sign-up-mode .right-panel .image, .container.sign-up-mode .right-panel .content {
-        transform: translateY(0px);
-    }
-    .right-panel .image, .right-panel .content {
-        transform: translateY(300px);
-    }
-    .container.sign-up-mode .signin-signup {
-        top: 5%;
-        transform: translate(-50%, 0);
+        height: 85vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 }
 
-@media (max-width: 570px) {
-    form {
-        padding: 0 1.5rem;
+@media (max-width: 420px) {
+    .chatbox {
+        width: 100%;
+        min-width: 390px;
+        height: 580px;
+        background: var(--blackShadow);
+        padding: 20px;
+        margin: 0px auto;
+        box-shadow: 0 3px var(--GreyLight);
+        overflow: hidden !important;
     }
-    .image {
+    .chatlogs {
+        padding: 10px;
+        width: 100%;
+        height: 650px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .chatlogs::-webkit-scrollbar {
+        width: 10px;
+    }
+    .chatlogs::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: var(--BlackShadowLight)
+    }
+    .hide {
         display: none;
     }
-    .panel .content {
-        padding: 0.5rem 1rem;
+    .saveButton {
+        background-color: var(--Primary);
+        width: 70%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        box-shadow: var(--BlackShadowLightSecondary) 0px 2px 15px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
     }
-    .container {
-        padding: 1.5rem;
+    .stepFive {
+        margin-bottom: 40px;
     }
-    .container:before {
-        bottom: 72%;
-        left: 50%;
+    .masterHome {
+        overflow: hidden;
     }
-    .container.sign-up-mode:before {
-        bottom: 28%;
-        left: 50%;
+}
+
+@media (max-width: 380px) {
+    .chatlogs {
+        padding: 10px;
+        width: 100%;
+        height: 700px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 360px) {
+    .chatbox {
+        width: 100%;
+        min-width: 390px;
+        height: 580px;
+        background: var(--blackShadow);
+        padding: 20px;
+        margin: 0px auto;
+        box-shadow: 0 3px var(--GreyLight);
+        overflow: hidden !important;
+    }
+    .chatlogs {
+        padding: 10px;
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .chatlogs::-webkit-scrollbar {
+        width: 10px;
+    }
+    .chatlogs::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: var(--BlackShadowLight)
+    }
+    .hide {
+        display: none;
+    }
+    .saveButton {
+        background-color: var(--Primary);
+        width: 70%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        box-shadow: var(--BlackShadowLightSecondary) 0px 2px 15px;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .stepFive {
+        margin-bottom: 40px;
+    }
+    .masterHome {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 285px) {
+    .chatbox {
+        width: 100%;
+        min-width: 390px;
+        height: 580px;
+        background: var(--blackShadow);
+        padding: 0px;
+        margin: 0px auto;
+        box-shadow: 0 3px var(--GreyLight);
+        overflow: hidden !important;
+    }
+    .chatlogs {
+        padding: 2px;
+        width: 100%;
+        height: 700px;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 }

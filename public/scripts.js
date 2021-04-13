@@ -1,16 +1,14 @@
-const modaloverlay = document.querySelector('.modal-overlay')
-const cards = document.querySelectorAll('.card')
-let modal = document.querySelector('.modal');
-let modalImg = document.querySelector('#modal_img');
+const axios = require('axios')
 
-
-for (let card of cards) {
-    card.addEventListener("click", function(){ 
-        const videoId= card.getAttribute("id");
-        window.location.href = `/video?id=${videoId}`
-    })
+async function getData() {
+  try {
+    const response = await fetch(
+      'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
+    )
+    console.log(response)
+  } catch (error) {
+    console.log('Error', error)
+  }
 }
 
-
-
-
+getData()

@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css" />
     <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -56,7 +55,7 @@
                             inceptos himenaeos. Vestibulum vel urna tortor. Vivamus et arcu non felis tristique
                             eleifend.
                         </p>
-                        <p> Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum
+                        <p class="SecondText"> Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum
                             ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam
                             ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut,
                             ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam.
@@ -83,16 +82,96 @@
                             <input class="inputRadio" type="radio" name="gender" value="female">
                             <label class="label" for="female">Feminino</label>
                         </div>
-                        <button class="submit">Enviar</button>
+                        <button class="submit" id="get-btn">Enviar</button>
                     </form>
                 </div>
             </div>
-            <div class="bodySecondContent"></div>
-            <div class="bodyThirdContent"></div>
-
+            <div class="dividerTheme"><span><b>Sua seleção especial</b></span></h2>
+            </div>
+            <div class="bodySecondContent">
+                <section id="cards" class="cards"></section>
+            </div>
+            <div class="moreItens">
+                <button class="submitMoreItens">Ainda mais produtos aqui!</button>
+            </div>
+            <div class="dividerTheme"><span><b>Compartilhe a novidade</b></span></h2>
+            </div>
+            <div class="bodyThirdContent">
+                <div class="share">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!
+                </div>
+                <form class="secondForm">
+                    <div class="inputForm-share">
+                        <label class="label" for="name">Nome do seu amigo:<input type="text" name="name" /></label>
+                    </div>
+                    <div class="inputForm-share">
+                        <label class="label" for="email">E-mail:<input type="text" name="email" /></label>
+                    </div>
+                </form>
+                <div class="submit-share">
+                    <button class="submit">Enviar agora</button>
+                </div>
+            </div>
         </div>
+        <footer>
+            <div class="footer-content">
+                <div class="navBarText-h6">
+                    <div class="footer-text">Testando suas habilidades em HTML, CSS e JS. Linx Impulse </div>
+                    <div class="footer-lastText">2019</div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <script src="app.js"></script>
+    <script>
+        async function getData() {
+            try {
+                const response = await fetch(
+                    'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
+                )
+                const jsonResponse = await response.json()
+                const products = await jsonResponse.products
+                renderInnerHTML(products)
+                console.log(products)
+            } catch (error) {
+                console.log('Error', error)
+            }
+        }
+        getData()
+
+        function renderInnerHTML(products) {
+            let output = ''
+
+            for (let product of products) {
+                output += `<div class="card__image-container">
+                        <div>
+                        <img class="image-src"
+                            src="${product.image}"
+                            alt="section image"></div>
+                        <div>
+                            <div class="card_content">
+                            <div>${product.name}</div>
+                        </div>
+                        <div class="card_info">
+                            <p>${product.description}</p>
+                        </div>
+                        <div class="card_oldPrice">
+                            <div>De: R$ ${product.oldPrice}</div>
+                        </div>
+                        <div class="card_Price">
+                            <div><b>Por: R$ ${product.price}</b></div>
+                        </div>
+                        <div class="card_parcelingPrice">
+                            <div>ou ${product.installments.count}x de R$ ${product.installments.value}</div>
+                        </div>
+                        <div class="buyButton">
+                            <button class="buySubmit">Comprar</button>
+                        </div>
+                        </div>
+                    </div>`
+            }
+
+            document.getElementById('cards').innerHTML = output
+        }
+    </script>
 </body>
 
 </html>
