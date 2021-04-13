@@ -285,30 +285,25 @@ footer {
 }
 
 @media (max-width: 1040px) {
-    /* Aqui */
     .gridButtons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         justify-content: center;
         width: 100vw;
     }
-    /* Aqui */
     .bodyMaster {
         margin: 20px 40px 40px;
         color: var(--textGreyColor);
         font-weight: 400;
     }
-    /* Aqui */
     .inputForm {
         margin-bottom: 60px;
     }
-    /* Aqui */
     .inputForm-radio {
         display: grid;
         grid-template-columns: 30px 100px 30px 100px;
         margin-bottom: 60px;
     }
-    /* Aqui */
     .card__image-container {
         width: 140px;
         height: 440px;
@@ -316,11 +311,9 @@ footer {
 }
 
 @media (max-width: 870px) {
-    /* Aqui */
     .inputForm {
         margin-bottom: 80px;
     }
-    /* Aqui */
     .inputForm-radio {
         display: grid;
         grid-template-columns: 30px 100px 30px 100px;
@@ -328,15 +321,13 @@ footer {
     }
 }
 
-@media (max-width: 540px) {
-    /* AquiE */
+@media (max-width: 650px) {
     input {
         display: block;
         width: 475px;
         height: 30px;
         padding-left: 10px;
     }
-    /* Aqui */
     footer {
         color: white;
         padding: 0px 100px 30px 90px;
@@ -344,7 +335,6 @@ footer {
         justify-content: center;
         background-image: linear-gradient(-9deg, var(--backgroundDarkColor) 70%, var(--backgroundLightColor) 30%);
     }
-    /* Aqui */
     .navBar {
         color: white;
         padding: 69px 66px 85px 16px;
@@ -356,7 +346,6 @@ footer {
     .navBarButtons {
         padding: 1px;
     }
-    /* Aqui */
     .gridButtons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -364,53 +353,43 @@ footer {
         width: 95vw;
         margin-top: 40px;
     }
-    /* Aqui */
     .buttonBody {
         padding: 6px 6px;
         border-radius: 5px;
         color: var(--textGreyColor);
         width: 130px;
     }
-    /* Aqui */
     .bodyMaster {
         margin: 20px 20px 40px;
         color: var(--textGreyColor);
         font-weight: 400;
     }
-    /* Aqui */
     .bodyFirstContent {
         display: block;
         margin-bottom: 80px;
     }
-    /* Aqui */
     .firstForm {
         margin-left: 0px !important;
     }
-    /* Aqui */
     .secondForm {
         display: block;
         justify-content: center;
         margin-top: 60px;
     }
-    /* Aqui */
     .title {
         font-size: 16px;
         margin-bottom: 30px;
     }
-    /* Aqui */
     .firstText {
         margin-bottom: 20px;
         font-size: 12px;
     }
-    /* Aqui */
     .SecondText {
         font-size: 12px;
     }
-    /* Aqui */
     .label {
         font-size: 12px;
     }
-    /* AquiE */
     .submit {
         height: 40px;
         width: 475px;
@@ -420,7 +399,6 @@ footer {
         border-radius: 5px;
         cursor: pointer;
     }
-    /* Aqui */
     .buySubmit {
         height: 30px;
         width: 140px;
@@ -431,7 +409,6 @@ footer {
         margin-top: 10px;
         cursor: pointer;
     }
-    /* Aqui */
     .submitMoreItens {
         height: 40px;
         width: 240px;
@@ -443,7 +420,6 @@ footer {
         align-items: center;
         cursor: pointer;
     }
-    /* Aqui */
     .dividerTheme {
         width: 100%;
         text-align: center;
@@ -452,21 +428,18 @@ footer {
         margin: 10px 0px 20px;
         font-size: 16px;
     }
-    /* Aqui */
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         width: 100%;
     }
-    /* AquiE */
     .card__image-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 500px;
         height: 245px;
     }
-    /* AquiE */
     .image-src {
         width: 200px;
         height: 245px;
@@ -474,32 +447,26 @@ footer {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         margin-right: 0px;
     }
-    /* Aqui */
     .card_content {
         margin-top: 0px;
         font-size: 12px;
     }
-    /* Aqui */
     .card_info {
         margin-top: 10px;
         font-size: 12px;
     }
-    /* Aqui */
     .card_oldPrice {
         margin-top: 3px;
         font-size: 12px;
     }
-    /* Aqui */
     .card_Price {
         margin-top: 3px;
         font-size: 14px;
     }
-    /* Aqui */
     .card_parcelingPrice {
         margin-top: 3px;
         font-size: 12px;
     }
-    /* Aqui */
     .footer-content {
         margin-top: 100px;
     }
@@ -513,14 +480,12 @@ footer {
 }
 
 @media (max-width: 420px) {
-    /* AquiE */
     input {
         display: block;
         width: 375px;
         height: 30px;
         padding-left: 10px;
     }
-    /* Aqui */
     footer {
         color: white;
         padding: 0px 100px 30px 90px;
@@ -528,7 +493,6 @@ footer {
         justify-content: center;
         background-image: linear-gradient(-9deg, var(--backgroundDarkColor) 70%, var(--backgroundLightColor) 30%);
     }
-    /* Aqui */
     .navBar {
         color: white;
         padding: 69px 66px 85px 16px;
@@ -537,7 +501,6 @@ footer {
         align-items: flex-start;
         background-image: linear-gradient(195deg, var(--backgroundDarkColor) 72%, var(--backgroundLightColor) 33%);
     }
-    /* Aqui */
     .navBarText-h2 {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 32px;
@@ -548,7 +511,6 @@ footer {
         text-align: left;
         width: 100%;
     }
-    /* Aqui */
     .navBarText-h4 {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 20px;
@@ -558,7 +520,6 @@ footer {
         margin-bottom: 5px;
         text-align: left;
     }
-    /* Aqui */
     .navBarText-h6 {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 14px;
@@ -568,7 +529,6 @@ footer {
         margin-bottom: 5px;
         text-align: left;
     }
-    /* Aqui */
     .gridButtons {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -576,53 +536,43 @@ footer {
         width: 90vw;
         margin-top: 40px;
     }
-    /* Aqui */
     .buttonBody {
         padding: 6px 6px;
         border-radius: 5px;
         color: var(--textGreyColor);
         width: 130px;
     }
-    /* Aqui */
     .bodyMaster {
         margin: 20px 20px 40px;
         color: var(--textGreyColor);
         font-weight: 400;
     }
-    /* Aqui */
     .bodyFirstContent {
         display: block;
         margin-bottom: 80px;
     }
-    /* Aqui */
     .firstForm {
         margin-left: 0px !important;
     }
-    /* Aqui */
     .secondForm {
         display: block;
         justify-content: center;
         margin-top: 60px;
     }
-    /* Aqui */
     .title {
         font-size: 16px;
         margin-bottom: 30px;
     }
-    /* Aqui */
     .firstText {
         margin-bottom: 20px;
         font-size: 12px;
     }
-    /* Aqui */
     .SecondText {
         font-size: 12px;
     }
-    /* Aqui */
     .label {
         font-size: 12px;
     }
-    /* AquiE */
     .submit {
         height: 40px;
         width: 375px;
@@ -632,7 +582,6 @@ footer {
         border-radius: 5px;
         cursor: pointer;
     }
-    /* Aqui */
     .buySubmit {
         height: 30px;
         width: 140px;
@@ -643,7 +592,6 @@ footer {
         margin-top: 10px;
         cursor: pointer;
     }
-    /* Aqui */
     .submitMoreItens {
         height: 40px;
         width: 240px;
@@ -655,7 +603,6 @@ footer {
         align-items: center;
         cursor: pointer;
     }
-    /* Aqui */
     .dividerTheme {
         width: 100%;
         text-align: center;
@@ -664,21 +611,18 @@ footer {
         margin: 10px 0px 20px;
         font-size: 16px;
     }
-    /* Aqui */
     .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
         width: 100%;
     }
-    /* AquiE */
     .card__image-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 380px;
         height: 245px;
     }
-    /* AquiE */
     .image-src {
         width: 140px;
         height: 245px;
@@ -686,32 +630,26 @@ footer {
         background: #FFFFFF 0% 0% no-repeat padding-box;
         margin-right: 0px;
     }
-    /* Aqui */
     .card_content {
         margin-top: 0px;
         font-size: 12px;
     }
-    /* Aqui */
     .card_info {
         margin-top: 10px;
         font-size: 12px;
     }
-    /* Aqui */
     .card_oldPrice {
         margin-top: 3px;
         font-size: 12px;
     }
-    /* Aqui */
     .card_Price {
         margin-top: 3px;
         font-size: 14px;
     }
-    /* Aqui */
     .card_parcelingPrice {
         margin-top: 3px;
         font-size: 12px;
     }
-    /* Aqui */
     .footer-content {
         margin-top: 100px;
     }
@@ -725,14 +663,12 @@ footer {
 }
 
 @media (max-width: 380px) {
-    /* AquiE */
     input {
         display: block;
         width: 325px;
         height: 30px;
         padding-left: 10px;
     }
-    /* Aqui */
     .navBarText-h2 {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 32px;
@@ -743,7 +679,6 @@ footer {
         text-align: left;
         width: 100%;
     }
-    /* Aqui */
     .navBarText-h4 {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 20px;
@@ -753,7 +688,6 @@ footer {
         margin-bottom: 5px;
         text-align: left;
     }
-    /* Aqui */
     .navBarText-h6 {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 14px;
@@ -763,7 +697,6 @@ footer {
         margin-bottom: 5px;
         text-align: left;
     }
-    /* AquiE */
     .submit {
         height: 40px;
         width: 325px;
@@ -773,14 +706,12 @@ footer {
         border-radius: 5px;
         cursor: pointer;
     }
-    /* AquiE */
     .card__image-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 340px;
         height: 245px;
     }
-    /* AquiE */
     .image-src {
         width: 140px;
         height: 245px;
@@ -791,7 +722,6 @@ footer {
 }
 
 @media (max-width: 360px) {
-    /* Aqui */
     .navBarText-h2 {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 32px;
@@ -802,7 +732,6 @@ footer {
         text-align: left;
         width: 100%;
     }
-    /* Aqui */
     .navBarText-h4 {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 18px;
@@ -812,7 +741,6 @@ footer {
         margin-bottom: 5px;
         text-align: left;
     }
-    /* Aqui */
     .navBarText-h6 {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 12px;
@@ -822,7 +750,6 @@ footer {
         margin-bottom: 5px;
         text-align: left;
     }
-    /* AquiE */
     .submit {
         height: 40px;
         width: 325px;
@@ -832,14 +759,12 @@ footer {
         border-radius: 5px;
         cursor: pointer;
     }
-    /* AquiE */
     .card__image-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 320px;
         height: 245px;
     }
-    /* AquiE */
     .image-src {
         width: 140px;
         height: 245px;
@@ -850,14 +775,12 @@ footer {
 }
 
 @media (max-width: 325px) {
-    /* Aqui */
     input {
         display: block;
         width: 284px;
         height: 30px;
         padding-left: 10px;
     }
-    /* Aqui */
     .submit {
         height: 40px;
         width: 284px;
@@ -867,14 +790,12 @@ footer {
         border-radius: 5px;
         cursor: pointer;
     }
-    /* Aqui */
     .card__image-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 300px;
         height: 245px;
     }
-    /* Aqui */
     .image-src {
         width: 140px;
         height: 245px;
@@ -885,14 +806,12 @@ footer {
 }
 
 @media (max-width: 280px) {
-    /* Aqui */
     input {
         display: block;
         width: 240px;
         height: 30px;
         padding-left: 10px;
     }
-    /* Aqui */
     .submit {
         height: 40px;
         width: 240px;
@@ -902,14 +821,12 @@ footer {
         border-radius: 5px;
         cursor: pointer;
     }
-    /* Aqui */
     .card__image-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 250px;
         height: 245px;
     }
-    /* Aqui */
     .image-src {
         width: 100px;
         height: 245px;

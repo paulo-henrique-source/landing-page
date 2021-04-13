@@ -92,7 +92,7 @@
                 <section id="cards" class="cards"></section>
             </div>
             <div class="moreItens">
-                <button class="submitMoreItens">Ainda mais produtos aqui!</button>
+                <button class="submitMoreItens" onclick="nextProducts()">Ainda mais produtos aqui!</button>
             </div>
             <div class="dividerTheme"><span><b>Compartilhe a novidade</b></span></h2>
             </div>
@@ -122,24 +122,28 @@
         </footer>
     </div>
     <script>
-        async function getData() {
+        var nextPage = ''
+        let output = ''
+
+        async function getData(url) {
             try {
                 const response = await fetch(
-                    'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1'
+                    `https://${url}`
                 )
                 const jsonResponse = await response.json()
                 const products = await jsonResponse.products
                 renderInnerHTML(products)
-                console.log(products)
+                nextPage = jsonResponse.nextPage
             } catch (error) {
-                console.log('Error', error)
+                console.error('Error', error)
             }
         }
-        getData()
+
+        function nextProducts() {
+            getData(nextPage)
+        }
 
         function renderInnerHTML(products) {
-            let output = ''
-
             for (let product of products) {
                 output += `<div class="card__image-container">
                         <div>
@@ -171,6 +175,8 @@
 
             document.getElementById('cards').innerHTML = output
         }
+
+        getData('frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1')
     </script>
 </body>
 
