@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </head>
 
 <body>
@@ -108,7 +110,7 @@
                     </div>
                 </form>
                 <div class="submit-share">
-                    <button class="submit">Enviar agora</button>
+                    <button class="submit" onclick="sendEmail()">Enviar agora</button>
                 </div>
             </div>
         </div>
@@ -121,63 +123,7 @@
             </div>
         </footer>
     </div>
-    <script>
-        var nextPage = ''
-        let output = ''
-
-        async function getData(url) {
-            try {
-                const response = await fetch(
-                    `https://${url}`
-                )
-                const jsonResponse = await response.json()
-                const products = await jsonResponse.products
-                renderInnerHTML(products)
-                nextPage = jsonResponse.nextPage
-            } catch (error) {
-                console.error('Error', error)
-            }
-        }
-
-        function nextProducts() {
-            getData(nextPage)
-        }
-
-        function renderInnerHTML(products) {
-            for (let product of products) {
-                output += `<div class="card__image-container">
-                        <div>
-                        <img class="image-src"
-                            src="${product.image}"
-                            alt="section image"></div>
-                        <div>
-                            <div class="card_content">
-                            <div>${product.name}</div>
-                        </div>
-                        <div class="card_info">
-                            <p>${product.description}</p>
-                        </div>
-                        <div class="card_oldPrice">
-                            <div>De: R$ ${product.oldPrice}</div>
-                        </div>
-                        <div class="card_Price">
-                            <div><b>Por: R$ ${product.price}</b></div>
-                        </div>
-                        <div class="card_parcelingPrice">
-                            <div>ou ${product.installments.count}x de R$ ${product.installments.value}</div>
-                        </div>
-                        <div class="buyButton">
-                            <button class="buySubmit">Comprar</button>
-                        </div>
-                        </div>
-                    </div>`
-            }
-
-            document.getElementById('cards').innerHTML = output
-        }
-
-        getData('frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1')
-    </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
