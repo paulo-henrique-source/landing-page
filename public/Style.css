@@ -181,7 +181,56 @@ footer {
     border: solid 1px var(--backgroundDarkColor);
     color: var(--backgroundDarkColor);
     border-radius: 5px;
+    background: none;
+    transition: .6s;
+}
+
+.submit:focus {
+    outline: none;
+}
+
+.submit::before {
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 33%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
+}
+
+.submit::after {
+    content: '';
+    display: block;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    filter: blur(30px);
+    transform: translateX(-100px) scaleX(-15deg);
+    opacity: 0;
+}
+
+.submit:hover {
+    background: var(--backgroundDarkColor);
     cursor: pointer;
+    color: white;
+}
+
+.submit:hover::before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.submit:hover::after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
 }
 
 .buySubmit {
@@ -282,70 +331,6 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     width: 100%;
-}
-
-.bodyMail {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 26.4px;
-    color: var(--textGreyColor);
-    /* display: none; */
-}
-
-.mailGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.bodyMailHeader {
-    margin-bottom: 70px;
-}
-
-.bodyMailContent {
-    margin: 40px 160px 0px;
-}
-
-.bodyMailDescription {
-    font-size: 16px;
-    font-weight: 400;
-    width: 70vw;
-    margin-top: 20px;
-}
-
-.card__image-containerMail {
-    width: 500px;
-    height: 440px;
-}
-
-.image-srcMail {
-    width: 500px;
-    height: 440px;
-    border: 1px solid var(--backgroundDarkColor);
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-}
-
-.moreItensMail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0px 138px;
-    padding-top: 250px;
-    padding-right: 200px;
-}
-
-.submitMoreItensMail {
-    height: 40px;
-    width: 440px;
-    background-color: transparent;
-    border: solid 1px var(--backgroundDarkColor);
-    color: var(--backgroundDarkColor);
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
 }
 
 @media (max-width: 1040px) {
