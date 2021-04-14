@@ -87,6 +87,10 @@ Seria tambem um requisito o username e password usado no website MailtTrap para 
    ```sh
    npm install
    ```
+3. Rodar o projeto com
+   ```sh
+   npm start
+   ```
 
 <!-- CONTRIBUTING -->
 
