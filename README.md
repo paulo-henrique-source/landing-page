@@ -72,10 +72,6 @@
 
 ## Sobre o projeto
 
-<a href="https://github.com/paulo-henrique-source/landing-page">
-  <img src="public/screenshot.PNG" alt="Logo" width="80" height="80">
-</a>
-
 Este projeto é voltado para uma proposta de Landing Page com os produtos que a API retorna...
 
 Uma pagina estremamente preformatica e de facil acesso onde o usuario pode ver os produtos e enviar um email para algum amigo conferir tambem tais produtos.
