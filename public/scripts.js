@@ -2,28 +2,28 @@ var nextPage = ''
 let sectionProducts = ''
 
 async function getData(url) {
-    try {
-        const response = await fetch(`https://${url}`)
-        const jsonResponse = await response.json()
-        const products = await jsonResponse.products
-        renderInnerHTML(products)
-        nextPage = jsonResponse.nextPage
-    } catch (error) {
-        console.error('Error', error)
-    }
+  try {
+    const response = await fetch(`https://${url}`)
+    const jsonResponse = await response.json()
+    const products = await jsonResponse.products
+    renderInnerHTML(products)
+    nextPage = jsonResponse.nextPage
+  } catch (error) {
+    console.error('Error', error)
+  }
 }
 
 function nextProducts() {
-    getData(nextPage)
+  getData(nextPage)
 }
 
 function renderInnerHTML(products) {
-    for (let product of products) {
-        sectionProducts += `<div class="card__image-container">
+  for (let product of products) {
+    sectionProducts += `<div class="card__image-container">
                 <div>
                 <img class="image-src"
                     src="${product.image}"
-                    alt="section image"></div>
+                    alt="product image"></div>
                 <div>
                     <div class="card_content">
                     <div>${product.name}</div>
@@ -45,21 +45,20 @@ function renderInnerHTML(products) {
                 </div>
                 </div>
             </div>`
-    }
+  }
 
-    document.getElementById('cards').innerHTML = sectionProducts
+  document.getElementById('cards').innerHTML = sectionProducts
 }
 
 function validateEmail(email) {
-    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    return re.test(email)
+  const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  return re.test(email)
 }
 
 function sendEmail() {
-    const name = document.getElementById('name').value
-    const email = document.getElementById('email').value
-    const htmlMailBody =
-        `<div style="position: relative;
+  const name = document.getElementById('name').value
+  const email = document.getElementById('email').value
+  const htmlMailBody = `<div style="position: relative;
   width: 100%;
   background-color: var(--backgroundLightColor);
   min-height: 100vh;
@@ -255,19 +254,19 @@ function sendEmail() {
   </div>
 </div>`
 
-    if (validateEmail(email)) {
-        Email.send({
-            Host: 'smtp.mailtrap.io',
-            Username: '9a7cec4da469ca',
-            Password: 'e11d820ed23faf',
-            To: email,
-            From: 'deoxyss14@outlook.com',
-            Subject: 'This is the subject',
-            Body: htmlMailBody,
-        }).then((message) => alert(message))
-    } else {
-        alert('Email Inválido.')
-    }
+  if (validateEmail(email)) {
+    Email.send({
+      Host: 'smtp.mailtrap.io',
+      Username: '9a7cec4da469ca', //Poderia estar em um arquvivo .env porem vou deixar aqui mesmo para facilitar na hora de configurar o proximo ambiente.
+      Password: 'e11d820ed23faf', //Poderia estar em um arquvivo .env porem vou deixar aqui mesmo para facilitar na hora de configurar o proximo ambiente.
+      To: email,
+      From: 'deoxyss14@outlook.com', //Poderia estar em um arquvivo .env porem vou deixar aqui mesmo para facilitar na hora de configurar o proximo ambiente.
+      Subject: 'This is the subject',
+      Body: htmlMailBody,
+    }).then((message) => alert(message))
+  } else {
+    alert('Email Inválido.')
+  }
 }
 
 getData('frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1')
