@@ -13,7 +13,7 @@
     <a href="https://github.com/paulo-henrique-source/landing-page/issues"><strong>Explorar o codigo »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">Acessar a Landing Page</a>
+    <a href="https://landing-page-bold.herokuapp.com/">Acessar a Landing Page</a>
     ·
     <a href="https://github.com/paulo-henrique-source/landing-page/issues">Reportar problema</a>
     ·
@@ -26,22 +26,22 @@
   <summary>Sumario</summary>
   <ol>
     <li>
-      <a href="#about-the-project">Sobre o Projeto</a>
+      <a href="#Sobre-o-projeto">Sobre o Projeto</a>
       <ul>
-        <li><a href="#built-with">Construido Com</a></li>
+        <li><a href="#Construido-com">Construido Com</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Primeiros Passos</a>
+      <a href="#Primeiros-passos">Primeiros Passos</a>
       <ul>
-        <li><a href="#prerequisites">Pre-requisitos</a></li>
-        <li><a href="#installation">Instalação</a></li>
+        <li><a href="#Pre-requisitos">Pre-requisitos</a></li>
+        <li><a href="#Instalação">Instalação</a></li>
       </ul>
     </li>
-    <li><a href="#contributing">Contribuições</a></li>
-    <li><a href="#license">Licença</a></li>
-    <li><a href="#contact">Contato</a></li>
-    <li><a href="#acknowledgements">Reconhecimentos</a></li>
+    <li><a href="#Contribuições">Contribuições</a></li>
+    <li><a href="#Licença">Licença</a></li>
+    <li><a href="#Contato">Contato</a></li>
+    <li><a href="#Reconhecimentos">Reconhecimentos</a></li>
   </ol>
 </details>
 
